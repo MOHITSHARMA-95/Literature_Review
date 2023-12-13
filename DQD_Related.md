@@ -21,6 +21,8 @@ larger amount of errors.
 5. The accidental absence of information is just as much a concern as the intentional removal of data due to various reasons.
 **The different causes of missingness:**  
 **a. Partial completion:** During the process of collecting data over time, user fatigue, or object-related problems may fail to provide useful data after a certain point in the study. The resulting ordinal dependency of attributes can be used as a basis for treating the missing values.
- b. Missing by design: In this scenario the missingness mechanism is known and intentional, thus statistically treatable in the analysis. We differentiate between contingency attributes, when not all characteristics are equally applicable to all objects, and attribute sampling.
- c. Item non-response: Some variables are missing for some observations. In user-related studies, we further consider these categories of missingness: not provided, intentionally left out for various reasons; useless, provided data yields no information due to suitability, legibility or otherwise; lost,
+**b. Missing by design:**  In this scenario the missingness mechanism is known and intentional, thus statistically treatable in the analysis. We differentiate between contingency attributes, when not all characteristics are equally applicable to all objects, and attribute sampling.
+ **c. Item non-response:** Some variables are missing for some observations. In user-related studies, we further consider these categories of missingness: not provided, intentionally left out for various reasons; useless, provided data yields no information due to suitability, legibility or otherwise; lost,
 
+## We identify 4 sensitive, protected attributes, namely african_american, lgbt, minority and sex. 
+These are automatically disqualified as potential modeling attributes and are utilized for the discrimination analysis below. Ad- ditionally, we dismiss scholarship as a predictor due to its strongly correlated with the positive class of our target label, detailed in the correlation plot below.
